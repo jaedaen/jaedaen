@@ -1,0 +1,20 @@
+#!/bin/bash
+#Put this in your PATH
+#run_limited - If $1 has less than $2 processes running, program will exit without error.
+#Use with &&
+
+EXPECTED_ARGS=2
+
+if [ $# -ne $EXPECTED_ARGS ]
+then
+  exit 1
+fi
+
+COUNT=`wmctrl -l -x | grep $1 | wc -l`
+
+if [ "$COUNT" -lt "$2" ]
+then
+  exit 0
+else
+  exit 1
+fi
