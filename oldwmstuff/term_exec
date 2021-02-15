@@ -1,0 +1,5 @@
+#! /bin/bash
+# term_exec - this sucks in all the arguments and opens a shell with them
+# Used in rc.lua. syntax is: roxterm -r term_exec $command_to_run
+$@
+/bin/bash

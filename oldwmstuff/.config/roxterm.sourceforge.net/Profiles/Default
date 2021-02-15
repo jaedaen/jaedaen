@@ -1,0 +1,21 @@
+
+[roxterm profile]
+audible_bell=0
+background_type=2
+saturation=0.061270
+true_translucence=1
+scrollback_lines=1000
+scroll_on_output=1
+scroll_on_keystroke=1
+sel_by_word=-A-Za-z0-9,./?%&#_
+color_term=
+term=
+browser=firefox
+mailer=
+command=
+title_string=%s
+win_title=%s
+hide_menubar=1
+always_show_tabs=0
+font=Terminus 12
+scrollbar_pos=1
